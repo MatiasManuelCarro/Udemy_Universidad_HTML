@@ -1,0 +1,47 @@
+h1 {
+  color: #124559;
+}
+p {
+  color: #e9ecf5;
+  background-color: #01161e;
+  padding: 15px;
+  border: 10px solid #598392;
+  /*
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+  Orden de margin: top -> right -> bottom -> left
+  margin:40px 10px 20px 10px
+  */
+  margin: auto 50px; /* margenes automaticos */
+  text-align: center; /* Alineado */
+  width: 100px; /* ancho de la caja */
+}
+a {
+  text-decoration: none; /* quita el subrayado */
+  display: inline-block;
+  margin-top: 50px; /* espacio arriba del link */
+}
+/* Orden en CCS:
+LVHA (Link → Visited → Hover → Active)
+*/
+a:link {
+  color: #124559; /* color normal del link */
+}
+a:visited {
+  color: gray; /* color cuando ya fue visitado */
+}
+a:hover {
+  color: navy; /* color al pasar el mouse */
+}
+a:active {
+  color: #aec3b0; /* color mientras se hace clic */
+}
+a {
+  transition: color 0.3s ease; /* Tiempo de transicion de los colores */
+}
+a:focus { 
+  outline: 2px dashed #598392; /* lineas punteadas alrededor cuando clickeas en link */
+}
