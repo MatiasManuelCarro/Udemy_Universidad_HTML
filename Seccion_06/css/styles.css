@@ -1,0 +1,29 @@
+table{
+    width: 100%;
+}
+/*th -> Table Header ; td -> Table Data */
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-family: "Inter", serif;
+}
+caption{
+    color:blue;
+    font-family: "Inter", serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+th{
+    color:aliceblue;
+    background-color:darkblue;
+    font-family: "Inter", serif;
+}
+/*renglones pares */
+tr:nth-child(even){
+    background-color: cornflowerblue;
+}
+/*renglones impares */
+tr:nth-child(odd){
+    background-color:grey;
+}

@@ -1,0 +1,15 @@
+ol{ /* ordered list */
+    list-style: none;
+    counter-reset: contador;
+}
+ol li{
+    counter-increment: contador;;
+}
+
+ol li::before{ /*Agrega texto antes */
+    content: "Curso " counter(contador) " - ";
+    color:blue;
+}
+ol li::after{ /*Agrega al final */
+    content: ".";
+}

@@ -1,0 +1,24 @@
+h1{ /* Titulo */
+    color: #002855;
+    font-family: "Inter", sans-serif;
+}
+ul{
+    list-style-type: none;
+    background-color: #33415C ;   
+    overflow: hidden; /* Si el contenido se desborda del área visible del elemento, no lo muestra */
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left; /* La lista va de izquierda a derecha */
+}
+li a{ /* selecciona los links que estan dentro de LIST ITEM */
+    display: block;
+    color: #e3ebff;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #001233;
+}
