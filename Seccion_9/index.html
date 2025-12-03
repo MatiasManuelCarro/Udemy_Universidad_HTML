@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formularios en HTML</title>
+    <title>Ingreso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,26 +13,45 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Formularios en HTML</h1>
-    <form>
-      <label for="nombre">Nombre: </label><br />
+    <h1>Ingresar al Sistema</h1>
+    <form method="post">
+      <label for="username">Usuario: </label><br />
       <input
         type="text"
-        placeholder="Ingrese nombre..."
-        id="nombre"
-        name="nombre"
+        placeholder="Ingrese Usuario"
+        id="username"
+        name="username"
         required
+        style="padding-right: 30px"
       />
       <br />
-      <label for="apellido">Apellido: </label><br />
+      <label for="password">Contraseña: </label><br />
+      <div style="position: relative; display: inline-block;">
       <input
-        type="text"
-        placeholder="Ingrese apellido..."
-        id="apellido"
-        name="apellido"
+        type="password"
+        placeholder="Ingrese Contraseña"
+        id="password"
+        name="password"
         required
-      /><br />
+        style="padding-right: 30px" />
+        <!-- Boton icono -->
+    <span onclick="togglePassword()" 
+          style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); cursor: pointer;"> 👁️
+    </span>
+  </div>
+      <br />
       <input type="submit" value="Enviar" class="boton_gris" />
     </form>
+<script>
+function togglePassword() {
+  const input = document.getElementById("password");
+  if (input.type === "password") {
+    input.type = "text";   // muestra la contraseña
+  } else {
+    input.type = "password"; // la oculta
+  }
+}
+</script>
+
   </body>
 </html>
