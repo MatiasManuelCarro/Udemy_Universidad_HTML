@@ -10,48 +10,63 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Ingresar al Sistema</h1>
-    <form method="post">
-      <label for="username">Usuario: </label><br />
-      <input
-        type="text"
-        placeholder="Ingrese Usuario"
-        id="username"
-        name="username"
-        required
-        style="padding-right: 30px"
-      />
-      <br />
-      <label for="password">Contraseña: </label><br />
-      <div style="position: relative; display: inline-block;">
-      <input
-        type="password"
-        placeholder="Ingrese Contraseña"
-        id="password"
-        name="password"
-        required
-        style="padding-right: 30px" />
-        <!-- Boton icono -->
-    <span onclick="togglePassword()" 
-          style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); cursor: pointer;"> 👁️
-    </span>
-  </div>
-      <br />
-      <input type="submit" value="Enviar" class="boton_gris" />
-    </form>
-<script>
-function togglePassword() {
-  const input = document.getElementById("password");
-  if (input.type === "password") {
-    input.type = "text";   // muestra la contraseña
-  } else {
-    input.type = "password"; // la oculta
-  }
-}
-</script>
-
+    <div class="contenedor">
+      <h1>Ingresar al Sistema</h1>
+      <form method="post">
+        <label for="username">Usuario: </label><br />
+        <input
+          type="text"
+          placeholder="Ingrese Usuario"
+          id="username"
+          name="username"
+          required
+          style="padding-right: 30px"
+        />
+        <br />
+        <label for="password">Contraseña: </label><br />
+        <div style="position: relative; display: inline-block">
+          <input
+            type="password"
+            placeholder="Ingrese Contraseña"
+            id="password"
+            name="password"
+            required
+            style="padding-right: 30px"
+          />
+          <!-- Boton icono -->
+          <span
+            onclick="togglePassword()"
+            style="
+              position: absolute;
+              right: 8px;
+              top: 50%;
+              transform: translateY(-50%);
+              cursor: pointer;
+            "
+          >
+            <i class="fa-regular fa-eye" style="color: #484848;"></i>
+          </span>
+        </div>
+        <br />
+        <input type="submit" value="Enviar" class="boton_gris" />
+      </form>
+      <script>
+        function togglePassword() {
+          const input = document.getElementById("password");
+          if (input.type === "password") {
+            input.type = "text"; // muestra la contraseña
+          } else {
+            input.type = "password"; // la oculta
+          }
+        }
+      </script>
+    </div>
   </body>
 </html>

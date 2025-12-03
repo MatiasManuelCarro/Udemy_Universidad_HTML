@@ -1,6 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400; /* texto normal */
+  margin: 0;
+  height: 100vh; /* ocupa toda la altura de la ventana */
+  display: flex; /* activa flexbox */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  background: #f0f0f0; /* fondo de la página */
 }
 .fira-code-text {
   font-family: "Fira Code", monospace;
@@ -8,29 +14,45 @@ body {
   font-weight: 500; /* Medium */
   font-style: normal;
 }
-.boton_gris{
-    background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
-    color: #333; 
-    font-size: 12px;
-    font-weight: 500; 
-    padding: 8px 24px;
-    border: 1px solid #ccc; 
-    border-radius: 6px; 
-    cursor: pointer;
-    text-decoration: none;
-    margin: 12px;
-    transition: background 0.9s ease, box-shadow 0.3s ease, transform 0.2s ease;
+.boton_gris {
+  background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 12px;
+  transition: background 0.9s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .boton_gris:hover {
-    background: linear-gradient(to bottom, #dee2e6, #adb5bd);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  background: linear-gradient(to bottom, #dee2e6, #adb5bd);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .boton_gris:active {
   background: linear-gradient(to bottom, #adb5bd, hsl(207, 10%, 60%));
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
+/* Cuadro gris */
+.contenedor {
+  background: #e0e0e0;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 400px;
+}
+h1 {
+  font-family: "Roboto Mono", "Fira Code", monospace;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 4px; /* esquinas suavizadas */
+  display: inline-block; /* que parezca un rótulo */
+}
