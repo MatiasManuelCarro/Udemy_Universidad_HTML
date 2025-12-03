@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "VT323", monospace;
   font-weight: 400; /* texto normal */
   margin: 0;
   height: 100vh; /* ocupa toda la altura de la ventana */
@@ -7,21 +7,27 @@ body {
   justify-content: center; /* centra horizontalmente */
   align-items: center; /* centra verticalmente */
   background: #f0f0f0; /* fondo de la página */
+
+  /* Fondo con imagen */
+  background-image: url("../img/95wallpaper.jpg"); /* ruta de tu imagen */
+  background-size: cover; /* la imagen cubre toda la pantalla */
+  background-position: center; /* centrada */
+  background-repeat: no-repeat; /* evita que se repita */
 }
 .fira-code-text {
-  font-family: "Fira Code", monospace;
+  font-family: "VT323", monospace;
   font-optical-sizing: auto;
   font-weight: 500; /* Medium */
   font-style: normal;
 }
 .boton_gris {
+  font-family: "VT323", monospace;
+  font-size: 20px;
   background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
   color: #333;
-  font-size: 12px;
   font-weight: 500;
   padding: 8px 24px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #000000;
   cursor: pointer;
   text-decoration: none;
   margin: 12px;
@@ -29,12 +35,13 @@ body {
 }
 
 .boton_gris:hover {
-  background: linear-gradient(to bottom, #dee2e6, #adb5bd);
+  font-family: "VT323", monospace;
+  background: linear-gradient(to bottom, #c3c3c3, #818181);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .boton_gris:active {
-  background: linear-gradient(to bottom, #adb5bd, hsl(207, 10%, 60%));
+  background: linear-gradient(to bottom, #818181, hwb(0 40% 60%));
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -48,11 +55,30 @@ body {
   width: 400px;
 }
 h1 {
-  font-family: "Roboto Mono", "Fira Code", monospace;
+  font-family: "VT323", monospace;
+  font-size: 40px;
   font-weight: 500;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  color: #333;
-  border-radius: 4px; /* esquinas suavizadas */
+  color: #ffffff;
   display: inline-block; /* que parezca un rótulo */
+
+  /* Caja */
+  background: #0827f5; /* azul windows 95 */
+  border: 2px solid #999; /* borde gris */
+  width: 90%;
+  max-width: 400px;
+  height: 30px;
+  padding: 10px 20px; /* espacio interno */
+  border-radius: 4px; /* esquinas suavizadas */
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* sombra ligera */
+
+  display: flex;              /* activa flexbox dentro del h1 */
+  justify-content: center;    /* centra horizontalmente */
+  align-items: center;        /* centra verticalmente */
+}
+label {
+  font-size: 20px;
 }
