@@ -1,0 +1,74 @@
+* {
+  /* Aplica a toda la pagina*/
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  /* Se modifica formato de texto*/
+  font-size: 18px;
+}
+
+/* # marca la ID se utiliza para un solo elemento*/
+#titulo_principal {
+  /*formato para titulo principal*/
+  color: blueviolet;
+  text-align: center;
+  margin: 15px; /* Sobreescribe el de * para h1 */
+}
+.titulo_uno {
+  /*Clase para titulos*/
+  color: cadetblue;
+  text-align: center;
+  margin: 15px; /* Sobreescribe el de * para h1 */
+}
+h2 {
+  color: cadetblue;
+}
+p {
+  color: darkgreen;
+}
+
+/*Clase de CSS mos permite utilizaro en varios elementos*/
+.tarjeta {
+  border: 5px solid #173b00;
+  background-color: beige;
+  text-align: center;
+  margin: 25px 200px;
+}
+.titulo_dos {
+  color: darkolivegreen;
+}
+.resaltado {
+  color: crimson;
+}
+.marco {
+  width: 100%; /* ocupa todo el ancho disponible */
+  height: 600px; /* alto fijo */
+  margin: 20px;
+}
+.boton {
+  background: linear-gradient(135deg, #6a5acd, #00bfff); /* Fondo degradado */
+  color: white; /* Texto en blanco */
+  font-size: 16px; /* Tamaño de letra */
+  font-weight: bold; /* Texto en negrita */
+  padding: 12px 24px; /* Espaciado interno (alto y ancho) */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a "mano" */
+  transition: box-shadow 0.2s ease; /* Animación suave */
+  text-decoration: none;
+  margin: 16px;
+  align-self: center;
+}
+
+.boton:hover {
+  transform: scale(1.05); /* Se agranda un poquito al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+.boton:active {
+  transform: scale(0.85); /* Se achica un poquito al presionar */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Sombra más corta, como si se hundiera */
+  background: linear-gradient(135deg, #483d8b, #1e90ff); /* Colores más oscuros para dar efecto de presión */
+}
