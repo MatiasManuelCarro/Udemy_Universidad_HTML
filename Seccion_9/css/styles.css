@@ -8,11 +8,7 @@ body {
   align-items: center; /* centra verticalmente */
   background: #f0f0f0; /* fondo de la página */
 
-  /* Fondo con imagen */
-  background-image: url("../img/95wallpaper.jpg"); /* ruta de tu imagen */
-  background-size: cover; /* la imagen cubre toda la pantalla */
-  background-position: center; /* centrada */
-  background-repeat: no-repeat; /* evita que se repita */
+  background-color: #00807F; /* verde azulado Windows 95 */
 }
 .fira-code-text {
   font-family: "VT323", monospace;
@@ -21,35 +17,29 @@ body {
   font-style: normal;
 }
 .boton_gris {
-  font-family: "VT323", monospace;
-  font-size: 20px;
-  background: linear-gradient(to bottom, #f8f9fa, #dee2e6);
-  color: #333;
-  font-weight: 500;
-  padding: 8px 24px;
-  border: 1px solid #000000;
+  font-family: "VT323", monospace; /* tipografía retro */
+  font-size: 18px;
+  color: #000;
+  background-color: #c0c0c0; /* gris clásico */
+  border: 2px outset #fff;   /* borde biselado claro */
+  padding: 6px 20px;
   cursor: pointer;
-  text-decoration: none;
-  margin: 12px;
-  transition: background 0.9s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  margin: 8px;
 }
 
 .boton_gris:hover {
-  font-family: "VT323", monospace;
-  background: linear-gradient(to bottom, #c3c3c3, #818181);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #dcdcdc; /* gris más claro */
 }
 
 .boton_gris:active {
-  background: linear-gradient(to bottom, #818181, hwb(0 40% 60%));
-  transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px inset #fff;    /* se hunde */
+  background-color: #a0a0a0; /* gris más oscuro */
 }
 /* Cuadro gris */
 .contenedor {
   background: #e0e0e0;
-  padding: 20px 40px;
-  border-radius: 8px;
+  padding: 2px 2px 2cap;
+  border-radius: 2px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   text-align: center;
   width: 400px;
@@ -65,20 +55,25 @@ h1 {
   /* Caja */
   background: #0827f5; /* azul windows 95 */
   border: 2px solid #999; /* borde gris */
-  width: 90%;
-  max-width: 400px;
+  width: 98%;
+  max-width: 356px;
   height: 30px;
+  margin: 0;
   padding: 10px 20px; /* espacio interno */
-  border-radius: 4px; /* esquinas suavizadas */
-  display: block;
-  margin: 0 auto;
+  border-radius: 0; /* esquinas suavizadas */
+  display: flex;
   text-align: center;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* sombra ligera */
-
   display: flex;              /* activa flexbox dentro del h1 */
   justify-content: center;    /* centra horizontalmente */
   align-items: center;        /* centra verticalmente */
 }
 label {
   font-size: 20px;
+}
+
+input::placeholder {
+  font-family: "VT323", monospace; /* fuente retro */
+  font-size: 16px;                 /* tamaño */
+  color: #666;                     /* color gris */
 }
