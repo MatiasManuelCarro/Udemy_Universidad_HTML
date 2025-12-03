@@ -72,6 +72,12 @@ label {
   font-size: 20px;
 }
 
+input {
+  font-family: "VT323", monospace; /* cambia la fuente del texto escrito */
+  font-size: 16px;
+  color: #000;                     /* color del texto */
+}
+
 input::placeholder {
   font-family: "VT323", monospace; /* fuente retro */
   font-size: 16px;                 /* tamaño */
