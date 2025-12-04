@@ -1,0 +1,135 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #333;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* hace visible el gradiente */
+}
+
+/* Línea decorativa debajo */
+h1::after {
+  content: "";
+  display: block;
+  width: 80px; /* ancho de la línea */
+  height: 4px; /* grosor */
+  background: linear-gradient(135deg, #4a90e2, #50c9c3); /* mismo gradiente */
+  margin: 0.6rem auto 0; /* centrado debajo del texto */
+  border-radius: 2px;
+}
+.contenedor {
+  width: 40%;
+  max-width: 900px; /* más ancho */
+  margin: 2rem auto; /* centrado horizontal */
+  padding: 2rem; /* espacio interno */
+  background: #fff; /* fondo blanco limpio */
+  border: 1px solid #e0e0e0; /* borde suave */
+  border-radius: 12px; /* esquinas redondeadas */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* sombra moderna */
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ahora se alinean a la izquierda */
+    gap: 0.3rem;
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem;
+  border: 1px solid #b3d9ff; /* borde celeste suave */
+  border-radius: 8px;
+  background-color: #f0f8ff; /* fondo celeste muy claro */
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease; /* animación suave */
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.2); /* sombra celeste */
+}
+
+/* Efecto al enfocar */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2; /* azul más intenso */
+  background-color: #e6f2ff; /* celeste más marcado */
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+input[type="password"] {
+  margin-bottom: 1rem; /* espacio entre campos */
+}
+
+/* Chrome, Safari, Edge (WebKit) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Wrapper para los campos con ícono */
+.input-wrapper {
+  position: relative;
+  display: block;
+  width: 100%; /* ocupa el mismo ancho que los demás */
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 2rem; /* espacio para ícono si lo agregás */
+  box-sizing: border-box;
+}
+
+.boton_moderno {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4a90e2, #357ab8);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.boton_moderno:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.boton_moderno:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #3a71af, #214c72);
+}
+
+label {
+  display: block; /* cada label ocupa toda la línea */
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #333;
+}
