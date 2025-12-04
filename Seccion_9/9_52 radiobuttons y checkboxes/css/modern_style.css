@@ -133,3 +133,69 @@ label {
   font-weight: 500;
   color: #333;
 }
+
+/* ===== MODO OSCURO ===== */
+body.dark-mode {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c); /* fondo oscuro */
+    color: #ffffff; /* texto claro */
+  }
+  
+  body.dark-mode .contenedor {
+    background: #2c2c2c; /* recuadro oscuro */
+    border: 1px solid #444;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* h1 en modo oscuro */
+  body.dark-mode h1 {
+    background: linear-gradient(135deg, #888, #aaa); /* gradiente gris */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Línea decorativa debajo del h1 */
+  body.dark-mode h1::after {
+    background: linear-gradient(135deg, #888, #aaa); /* línea gris */
+  }
+  
+  /* Inputs y select en modo oscuro */
+  body.dark-mode input[type="text"],
+  body.dark-mode input[type="email"],
+  body.dark-mode input[type="password"],
+  body.dark-mode input[type="number"],
+  body.dark-mode select {
+    background-color: #333; /* fondo gris oscuro */
+    border: 1px solid #888; /* borde gris */
+    color: #f0f0f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  }
+  
+  body.dark-mode input:focus,
+  body.dark-mode select:focus {
+    background-color: #444;
+    border-color: #aaa; /* gris más claro al enfocar */
+    box-shadow: 0 4px 10px rgba(200,200,200,0.3);
+  }
+  
+  label {
+    display: block;        /* cada label ocupa toda la línea */
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 69%);           /* gris más claro que el texto normal */
+  }
+
+  #toggle-mode {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #toggle-mode:hover {
+    background: #357ab8;
+  }

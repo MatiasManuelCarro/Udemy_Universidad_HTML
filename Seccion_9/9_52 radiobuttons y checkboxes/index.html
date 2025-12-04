@@ -21,9 +21,26 @@
     <link href="css/modern_style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- boton modo oscuro / claro-->
+    <button id="toggle-mode">🌙 Modo Oscuro</button>
+    <!-- Script modos -->
+    <script>
+      const toggleButton = document.getElementById("toggle-mode");
+    
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    
+        if (document.body.classList.contains("dark-mode")) {
+          toggleButton.textContent = "☀️ Modo Claro";
+        } else {
+          toggleButton.textContent = "🌙 Modo Oscuro";
+        }
+      });
+    </script>
+
     <div class="contenedor">
       <h1>Crear Usuario</h1>
-      <form method="post">
+      <form method="post" action="mi_servidor">
         <!-- Nombre -->
         <label for="nombre">Nombre: </label><br />
         <input
